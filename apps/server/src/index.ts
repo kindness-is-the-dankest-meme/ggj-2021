@@ -14,6 +14,10 @@ const server = createServer((req, res) => {
       return;
     }
 
+    /**
+     * n.b. the `Callback` is mis-typed in `@types/node-static`
+     * @see https://github.com/cloudhead/node-static#intercepting-errors--listening
+     */
     // @ts-expect-error
     res.writeHead(err.status, err.headers);
     res.end();
