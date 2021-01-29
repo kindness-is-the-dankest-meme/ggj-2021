@@ -38,6 +38,7 @@
   "devDependencies": {
     "@kitdm/ggj-2021-config": "1.0.0",
     "@types/node": "14.14.22",
+    "@types/node-static": "0.7.6",
     "@types/ws": "7.4.0",
     "nodemon": "2.0.7",
     "ts-node": "9.1.1",
