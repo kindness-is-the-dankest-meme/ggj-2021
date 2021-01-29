@@ -3,7 +3,7 @@ module.exports = {
   trailingComma: 'all',
   overrides: [
     {
-      files: ['lerna.json'],
+      files: ['lerna.json', 'tsconfig.json'],
       options: { parser: 'json-stringify' },
     },
   ],
