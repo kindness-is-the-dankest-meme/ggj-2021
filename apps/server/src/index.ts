@@ -1,15 +1,23 @@
-import { fileURLToPath } from 'url';
-import { dirname, resolve } from 'path';
 import { createServer } from 'http';
+import { dirname, resolve } from 'path';
+import { fileURLToPath } from 'url';
 
-import ws from 'ws';
 import nodeStatic from 'node-static';
+import ws from 'ws';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const files = new nodeStatic.Server(resolve(__dirname, '../public'));
 
 const server = createServer((req, res) => {
-  files.serve(req, res);
+  files.serve(req, res, (err) => {
+    if (!err) {
+      return;
+    }
+
+    // @ts-expect-error
+    res.writeHead(err.status, err.headers);
+    res.end();
+  });
 });
 
 const wss = new ws.Server({ server });
