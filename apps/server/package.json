@@ -29,5 +29,8 @@
   "homepage": "https://github.com/kindness-is-the-dankest-meme/ggj-2021#readme",
   "dependencies": {
     "ws": "7.4.2"
+  },
+  "devDependencies": {
+    "@kitdm/ggj-2021-config": "1.0.0"
   }
 }
