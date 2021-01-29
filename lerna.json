@@ -1,0 +1,16 @@
+{
+  "commmand": {
+    "add": {
+      "exact": true
+    },
+    "init": {
+      "exact": true
+    }
+  },
+  "packages": [
+    "apps/*",
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "npmClient": "npm"
+}
