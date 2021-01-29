@@ -1,0 +1,35 @@
+{
+  "name": "ggj-2021",
+  "version": "1.0.0",
+  "description": "A faffabout for Global Game Jam (Online) 2021",
+  "private": "true",
+  "type": "module",
+  "engines": {
+    "node": "14.15.4",
+    "npm": "7.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kindness-is-the-dankest-meme/ggj-2021.git"
+  },
+  "keywords": [
+    "faffabout",
+    "global",
+    "game",
+    "jam",
+    "global",
+    "game",
+    "jam",
+    "ggj",
+    "2021"
+  ],
+  "author": "Matt Hayes <matt@mysterycommand.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kindness-is-the-dankest-meme/ggj-2021/issues"
+  },
+  "homepage": "https://github.com/kindness-is-the-dankest-meme/ggj-2021#readme"
+}
