@@ -32,11 +32,13 @@
   },
   "homepage": "https://github.com/kindness-is-the-dankest-meme/ggj-2021#readme",
   "dependencies": {
+    "http-proxy": "1.18.1",
     "node-static": "0.7.11",
     "ws": "7.4.2"
   },
   "devDependencies": {
     "@kitdm/ggj-2021-config": "1.0.0",
+    "@types/http-proxy": "1.17.5",
     "@types/node": "14.14.22",
     "@types/node-static": "0.7.6",
     "@types/ws": "7.4.0",
