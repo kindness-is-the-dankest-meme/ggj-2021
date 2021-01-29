@@ -17,6 +17,7 @@ const server = createServer((req, res) => {
       return;
     }
 
+    // TODO: figure out how to handle any filetype, but still catch the error
     if (['.js', '.json'].includes(extname(req.url))) {
       client.web(req, res);
       return;
