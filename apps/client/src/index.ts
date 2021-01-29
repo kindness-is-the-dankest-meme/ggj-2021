@@ -1,2 +1,2 @@
-import { name } from '../package.json';
-console.log(name);
+console.log(Date.now());
+export {};
