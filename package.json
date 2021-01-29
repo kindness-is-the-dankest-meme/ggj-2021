@@ -9,7 +9,8 @@
     "npm": "7.5.0"
   },
   "workspaces": [
-    "./apps/*"
+    "./apps/*",
+    "./packages/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
