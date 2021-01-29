@@ -1,8 +1,5 @@
 {
   "commmand": {
-    "add": {
-      "exact": true
-    },
     "init": {
       "exact": true
     }
