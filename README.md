@@ -1,4 +1,4 @@
-# [Global Game Jam](https://globalgamejam.org) 2021
+# [Faffabout](https://globalgamejam.org/2021/games/faffabout-4), a [Global Game Jam](https://globalgamejam.org) 2021 Entry
 
 > A faffabout for Global Game Jam (Online) 2021<br>
 > by [Matt Hayes](https://globalgamejam.org/users/mysterycommand)
