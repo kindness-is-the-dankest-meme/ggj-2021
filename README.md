@@ -42,3 +42,11 @@ The [client app](apps/client) is an [Esbuild](https://esbuild.github.io/) projec
 I'm interested in setting up a mutli-player game that uses [Immer](https://immerjs.github.io/immer/) to manage state on the client and server, and that uses it's [patches](https://immerjs.github.io/immer/docs/patches) mechanism to keep everything in sync. Possibly along the lines of [this article](https://medium.com/@mweststrate/distributing-state-changes-using-snapshots-patches-and-actions-part-1-2811a2fcd65f) and [the followup](https://medium.com/@mweststrate/distributing-state-changes-using-snapshots-patches-and-actions-part-2-2f50d8363988). I also might want to look into [compressing patches](https://medium.com/@dedels/using-immer-to-compress-immer-patches-f382835b6c69).
 
 While the socket + patches sync setup sounds cool. I think I'd also like to see if I can get[mediasoup](https://mediasoup.org/) up and running on the server (making it an [SFU](https://webrtcglossary.com/sfu/)) for even lower latency between clients.
+
+---
+
+## Other Stuff
+
+- CI/CD with [Semantic Release](https://semantic-release.gitbook.io/) and [GitHub Actions](https://github.com/features/actions) possibly with a dynamic job matrix using [`lerna list`](https://github.com/lerna/lerna/tree/main/commands/list#readme) and/or [`lerna changed`](https://github.com/lerna/lerna/tree/main/commands/changed#readme).
+- [Docker](https://www.docker.com/)? NodeJS deployment anyway (can't just be a static site any more) … maybe [Heroku](https://www.heroku.com/) maybe [AWS](https://aws.amazon.com/getting-started/hands-on/deploy-nodejs-web-app/)
+- [Electron](https://www.electronjs.org/)?
