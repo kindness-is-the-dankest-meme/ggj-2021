@@ -1,0 +1,49 @@
+{
+  "name": "@kitdm/ggj-2021-server",
+  "version": "1.0.0",
+  "description": "A server",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "14.15.4",
+    "npm": "7.5.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kindness-is-the-dankest-meme/ggj-2021.git"
+  },
+  "keywords": [
+    "faffabout",
+    "global game jam",
+    "global",
+    "game",
+    "jam",
+    "ggj",
+    "2021"
+  ],
+  "author": "Matt Hayes <matt@mysterycommand.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kindness-is-the-dankest-meme/ggj-2021/issues"
+  },
+  "homepage": "https://github.com/kindness-is-the-dankest-meme/ggj-2021#readme",
+  "dependencies": {
+    "http-proxy": "1.18.1",
+    "node-static": "0.7.11",
+    "ws": "7.4.2"
+  },
+  "devDependencies": {
+    "@kitdm/ggj-2021-config": "1.0.0",
+    "@types/http-proxy": "1.17.5",
+    "@types/node": "14.14.22",
+    "@types/node-static": "0.7.6",
+    "@types/ws": "7.4.0",
+    "nodemon": "2.0.7",
+    "ts-node": "9.1.1",
+    "typescript": "4.1.3"
+  }
+}

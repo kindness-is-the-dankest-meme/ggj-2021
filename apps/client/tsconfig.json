@@ -1,0 +1,14 @@
+{
+  "extends": "@kitdm/ggj-2021-config/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+      "ScriptHost"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}

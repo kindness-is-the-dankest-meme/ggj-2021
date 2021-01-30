@@ -1,0 +1,11 @@
+{
+  "extends": "@kitdm/ggj-2021-config/tsconfig.json",
+  "compilerOptions": {
+    "lib": [
+      "ESNext"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}
