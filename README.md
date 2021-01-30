@@ -34,3 +34,11 @@ I'm only casually participating this year, and using it as an excuse to explore 
 The [server app](apps/server) is a simple NodeJS server that's using [`node-static`](https://www.npmjs.com/package/node-static) to serve static assets out of [the public folder](apps/server/public) (following [this tutorial](https://nodejs.org/en/knowledge/HTTP/servers/how-to-serve-static-files/)) and [`ws`](https://www.npmjs.com/package/ws) to set up a WebSocket server. An [`http-proxy`](https://www.npmjs.com/package/http-proxy) forwards requests for `.js` and `.json` files to the client.
 
 The [client app](apps/client) is an [Esbuild](https://esbuild.github.io/) project that (in dev) uses [the serve command](https://esbuild.github.io/api/#serve). This setup is very loosely inspired by [`yyz`](https://www.npmjs.com/package/yyz) and spiritually by other live coding projects. I'd love to eventually look into implemting something more live, but [Fast Refresh seems hard](https://github.com/facebook/react/issues/16604#issuecomment-528663101).
+
+---
+
+## Where I'd Like to Go
+
+I'm interested in setting up a mutli-player game that uses [Immer](https://immerjs.github.io/immer/) to manage state on the client and server, and that uses it's [patches](https://immerjs.github.io/immer/docs/patches) mechanism to keep everything in sync. Possibly along the lines of [this article](https://medium.com/@mweststrate/distributing-state-changes-using-snapshots-patches-and-actions-part-1-2811a2fcd65f) and [the followup](https://medium.com/@mweststrate/distributing-state-changes-using-snapshots-patches-and-actions-part-2-2f50d8363988). I also might want to look into [compressing patches](https://medium.com/@dedels/using-immer-to-compress-immer-patches-f382835b6c69).
+
+While the socket + patches sync setup sounds cool. I think I'd also like to see if I can get[mediasoup](https://mediasoup.org/) up and running on the server (making it an [SFU](https://webrtcglossary.com/sfu/)) for even lower latency between clients.
