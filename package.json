@@ -45,6 +45,21 @@
     "lint-staged": "10.5.3",
     "prettier": "2.2.1"
   },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "overrides": [
+      {
+        "files": [
+          "lerna.json",
+          "tsconfig.json"
+        ],
+        "options": {
+          "parser": "json-stringify"
+        }
+      }
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npx lint-staged"
