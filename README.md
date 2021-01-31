@@ -47,6 +47,7 @@ While the socket + patches sync setup sounds cool. I think I'd also like to see 
 
 ## Other Stuff
 
-- CI/CD with [Semantic Release](https://semantic-release.gitbook.io/) and [GitHub Actions](https://github.com/features/actions) possibly with a dynamic job matrix using [`lerna list`](https://github.com/lerna/lerna/tree/main/commands/list#readme) and/or [`lerna changed`](https://github.com/lerna/lerna/tree/main/commands/changed#readme).
+- CI/CD with [Semantic Release](https://semantic-release.gitbook.io/) and [GitHub Actions](https://github.com/features/actions) possibly with a dynamic job matrix using [`lerna list`](https://github.com/lerna/lerna/tree/main/commands/list#readme) and/or [`lerna changed`](https://github.com/lerna/lerna/tree/main/commands/changed#readme)
 - [Docker](https://www.docker.com/)? NodeJS deployment anyway (can't just be a static site any more) … maybe [Heroku](https://www.heroku.com/) maybe [AWS](https://aws.amazon.com/getting-started/hands-on/deploy-nodejs-web-app/)
 - [Electron](https://www.electronjs.org/)?
+- I really like the look of [KaboomJS](https://repl.it/talk/announcements/KaBoomjs-Alpha-Release/111563) (currently alpha/closed source though)
