@@ -1,4 +1,4 @@
-# [Global Game Jam](https://globalgamejam.org) 2021
+# [Faffabout](https://globalgamejam.org/2021/games/faffabout-4), a [Global Game Jam](https://globalgamejam.org) 2021 Entry
 
 > A faffabout for Global Game Jam (Online) 2021<br>
 > by [Matt Hayes](https://globalgamejam.org/users/mysterycommand)
@@ -39,7 +39,7 @@ The [client app](apps/client) is an [Esbuild](https://esbuild.github.io/) projec
 
 ## Where I'd Like to Go
 
-I'm interested in setting up a mutli-player game that uses [Immer](https://immerjs.github.io/immer/) to manage state on the client and server, and that uses it's [patches](https://immerjs.github.io/immer/docs/patches) mechanism to keep everything in sync. Possibly along the lines of [this article](https://medium.com/@mweststrate/distributing-state-changes-using-snapshots-patches-and-actions-part-1-2811a2fcd65f) and [the followup](https://medium.com/@mweststrate/distributing-state-changes-using-snapshots-patches-and-actions-part-2-2f50d8363988). I also might want to look into [compressing patches](https://medium.com/@dedels/using-immer-to-compress-immer-patches-f382835b6c69).
+I'm interested in setting up a mutli-player game that uses [Immer](https://immerjs.github.io/immer/) to manage state on the client and server, and that uses it's [patches](https://immerjs.github.io/immer/docs/patches) mechanism (based on [IETF RFC 6902](https://tools.ietf.org/html/rfc6902)) to keep everything in sync. Possibly along the lines of [this article](https://medium.com/@mweststrate/distributing-state-changes-using-snapshots-patches-and-actions-part-1-2811a2fcd65f) and [the followup](https://medium.com/@mweststrate/distributing-state-changes-using-snapshots-patches-and-actions-part-2-2f50d8363988). I also might want to look into [compressing patches](https://medium.com/@dedels/using-immer-to-compress-immer-patches-f382835b6c69). Am I doing [operational transformss](https://en.wikipedia.org/wiki/Operational_transformation)?
 
 While the socket + patches sync setup sounds cool. I think I'd also like to see if I can get[mediasoup](https://mediasoup.org/) up and running on the server (making it an [SFU](https://webrtcglossary.com/sfu/)) for even lower latency between clients.
 
@@ -47,6 +47,7 @@ While the socket + patches sync setup sounds cool. I think I'd also like to see 
 
 ## Other Stuff
 
-- CI/CD with [Semantic Release](https://semantic-release.gitbook.io/) and [GitHub Actions](https://github.com/features/actions) possibly with a dynamic job matrix using [`lerna list`](https://github.com/lerna/lerna/tree/main/commands/list#readme) and/or [`lerna changed`](https://github.com/lerna/lerna/tree/main/commands/changed#readme).
+- CI/CD with [Semantic Release](https://semantic-release.gitbook.io/) and [GitHub Actions](https://github.com/features/actions) possibly with a dynamic job matrix using [`lerna list`](https://github.com/lerna/lerna/tree/main/commands/list#readme) and/or [`lerna changed`](https://github.com/lerna/lerna/tree/main/commands/changed#readme)
 - [Docker](https://www.docker.com/)? NodeJS deployment anyway (can't just be a static site any more) … maybe [Heroku](https://www.heroku.com/) maybe [AWS](https://aws.amazon.com/getting-started/hands-on/deploy-nodejs-web-app/)
 - [Electron](https://www.electronjs.org/)?
+- I really like the look of [KaboomJS](https://repl.it/talk/announcements/KaBoomjs-Alpha-Release/111563) (currently alpha/closed source though)

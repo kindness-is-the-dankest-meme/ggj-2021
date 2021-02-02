@@ -37,8 +37,13 @@ const wss = new ws.Server({ server });
 
 wss.on('connection', (ws) => {
   ws.on('message', (message) => {
-    console.log(`received: ${message}`);
-    ws.send(message);
+    wss.clients.forEach((client) => {
+      if (client === ws || client.readyState !== ws.OPEN) {
+        return;
+      }
+
+      client.send(message);
+    });
   });
 });
 
